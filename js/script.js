@@ -99,7 +99,7 @@ toggleButton.forEach((el) => {
 
 async function getdata() {
   try {
-    let data = await fetch("./data.json");
+    let data = await fetch("../data.json");
     data = await data.json();
 
     const textCont = document.getElementsByClassName("textContent");
@@ -124,4 +124,5 @@ removeButtons.forEach((btn) => {
     btn.parentElement.parentElement.remove();
   });
 });
+
 
